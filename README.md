@@ -30,7 +30,7 @@ Grid Gallery
 Grid list with image
 
 ### Reservation
-Checkbox and form?
+Form
 
 ### Access
 Address, phone number and Google map(?)
