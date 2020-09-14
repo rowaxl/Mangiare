@@ -1,18 +1,22 @@
-# Project2
+# Mangiare
 
 ## Overview
-Restauran page for CICCC project2
+Restaurant page for CICCC project2
+Mangiare(*man’dʒare*): to eat
 
 ## Member
-- Zhaleh
-- Kim
+- Dan Vergara
+- Sejin Jeong
+- Soyun Lee
+- Wonjae Kim
 
 ## Pages
 - Home
 - Menu
+- My orders
 - Reservation
 - Access
-- Contact Us
+- Contact
 
 ## Details
 
@@ -22,7 +26,7 @@ Description and Carousel
 ### Menu
 Grid Gallery
 
-### My Order
+### My Orders
 Grid list with image
 
 ### Reservation
@@ -31,5 +35,5 @@ Checkbox and form?
 ### Access
 Address, phone number and Google map(?)
 
-### Contact Us
+### Contact
 Contact form
