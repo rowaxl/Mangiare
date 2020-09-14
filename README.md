@@ -3,6 +3,10 @@
 ## Overview
 Restauran page for CICCC project2
 
+## Member
+- Zhaleh
+- Kim
+
 ## Pages
 - Home
 - Menu
