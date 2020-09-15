@@ -32,3 +32,8 @@ header {
   color: rgba(255,255,255, 1);
   border-color: rgba(255,255,255,.5);
 }
+
+button.nav-link {
+  background: none;
+  border: none;
+}
