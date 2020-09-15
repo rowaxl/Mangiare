@@ -1,0 +1,33 @@
+/* only for common components */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 80px;
+}
+
+.nav-bar-bg  {
+  background: rgba(0, 0, 0, 0.58);
+}
+
+/* Override */
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255, 1);
+  border-color: rgba(255,255,255,.5);
+}

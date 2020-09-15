@@ -5,38 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 400px;
-        width: 100%;
-      }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/access.css">
   <title>Mangiare</title>
 </head>
 <body>
 
-<h1>Access to us</h1>
+  <div class="container-fluid px-0 access">
+    <header>
+      <div class="row px-0">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark nav-bar-bg">
+            <a class="navbar-brand text-light" href="#"><p class="h1">Mangiare</p></a>
 
-<div id="map" class="map"></div>
+            <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reservation</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Access <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <main class="my-4">
+      <h1 class="ml-4 text-light">Access</h1>
+
+      <section class="locations px-4">
+        <article class="d-flex flex-column flex-lg-row flex-norwrap flex-lg-wrap mt-4">
+          <div id="map-downtown" class="map flex-lg-grow-1"></div>
+          <div class="info ml-lg-4 px-4 py-4">
+            <h3>Downtown: Robson st</h3>
+            <p>1137 Robson St, Vancouver</p>
+            <p>123-456-7890</p>
+            <p>Lunch: Monday - Friday 11:30 - 14:00</p>
+            <p>Dinner: Monday - Saturday 5:30 - 21:00</p>
+          </div>
+        </article>
+
+        <article class="d-flex flex-column flex-lg-row-reverse flex-norwrap flex-lg-wrap mt-4">
+          <div id="map-kingsway" class="map flex-lg-grow-1"></div>
+          <div class="info mr-lg-4 px-4 py-4">
+            <h3>Burnaby: Kingsway</h3>
+            <p>4730 Kingsway, Burnaby</p>
+            <p>234-567-8901</p>
+            <p>Lunch: Monday - Friday 11:30 - 14:00</p>
+            <p>Dinner: Monday - Friday 5:30 - 21:00</p>
+          </div>
+        </article>
+
+        <article class="d-flex flex-column flex-lg-row flex-norwrap flex-lg-wrap mt-4">
+          <div id="map-richmond" class="map flex-lg-grow-1"></div>
+          <div class="info ml-lg-4 px-4 py-4">
+            <h3>Richmond: Thorpe Road</h3>
+            <p>4010 Thorpe Road, Richmond</p>
+            <p>345-678-9012</p>
+            <p>Lunch: Monday - Friday 11:30 - 14:00</p>
+            <p>Dinner: Monday - Friday 5:30 - 21:00</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="px-4">
+      <p class="text-light">&copy; 2020, for education purpose only</p>
+      <p class="text-light">photo by <a href="www.unsplash.com">Unsplash</a></p>
+    </footer>
+  </div>
+
 
   <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
   <script type="text/javascript">
-    const map = new OpenLayers.Map("map")
-    map.addLayer(new OpenLayers.Layer.OSM());
+    const maps = [
+      {id: 'map-downtown', lon: -123.125450, lat: 49.285306},
+      {id: 'map-kingsway', lon: -123.00123, lat: 49.22511},
+      {id: 'map-richmond', lon: -123.09224, lat: 49.18345},
+    ];
 
-    const lonLat = new OpenLayers.LonLat(-123.125450, 49.285306)
-      .transform(
-        new OpenLayers.Projection("EPSG:4326"),
-        map.getProjectionObject()
-      );
+    const zoom = 16;
 
-      const zoom = 16;
+    function renderMap({id, lon, lat}) {
+      const map = new OpenLayers.Map(id)
+      map.addLayer(new OpenLayers.Layer.OSM());
+
+      const lonLat = new OpenLayers.LonLat(lon, lat)
+        .transform(
+          new OpenLayers.Projection("EPSG:4326"),
+          map.getProjectionObject()
+        );
 
       const markers = new OpenLayers.Layer.Markers("Markers");
       map.addLayer(markers);
       markers.addMarker(new OpenLayers.Marker(lonLat));
 
       map.setCenter(lonLat, zoom);
+    }
+
+    maps.forEach(item => renderMap(item));
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
