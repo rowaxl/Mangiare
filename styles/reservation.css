@@ -1,0 +1,45 @@
+
+
+main{
+
+    
+    padding:0 30px;
+    flex:1;
+    margin:auto;
+    max-width:1440px;
+    background-color: white;
+}
+
+.information input {
+    padding:5px 20px;
+    width:100%;
+}
+fieldset{
+    border:none;
+    border-bottom:1px dashed gray;
+    margin:15px 0;
+}
+legend{
+    border-left:4px solid #b3aed4;
+    font-size:20px;
+    padding-left:8px;
+    margin:0;
+}
+
+
+.button-submit{ 
+    clear:both;  
+}
+button {
+    font-size:18px;
+    color:white;
+    background-color: #b3aed4;
+    border:none;
+    padding:10px 15px;
+    border-radius: 5px;
+    float:right;
+}
+button:focus{
+    outline:none;
+    background-color:#b3aed4;
+}
