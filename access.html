@@ -17,7 +17,7 @@
       <div class="row px-0">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-dark nav-bar-bg">
-            <a class="navbar-brand text-light" href="#"><p class="h1">Mangiare</p></a>
+            <a class="navbar-brand text-light" href="index.html"><p class="h1">Mangiare</p></a>
 
             <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -41,13 +41,43 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <!-- TODO: Connect with login function -->
-                  <button class="nav-link" href="#">Login</button>
+                  <button id="btn-login" class="nav-link" data-toggle="modal" data-target="#login-modal">Login</button>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+      </div>
+
+      <!--Login modal -->
+      <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+  
+            <div class="modal-body">
+              <form id="form-login">
+                <div class="form-group">
+                  <label for="input-email">Email address</label>
+                  <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+  
+                <div class="form-group">
+                  <label for="input-password">Password</label>
+                  <input type="password" class="form-control" id="input-password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="my-4">
@@ -94,7 +124,6 @@
       <p class="text-light">photo by <a href="www.unsplash.com">Unsplash</a></p>
     </footer>
   </div>
-
 
   <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
   <script type="text/javascript">
