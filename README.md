@@ -18,7 +18,7 @@ Mangiare(*man’dʒare*): to eat
 - Access
 - Contact
 
-## Details
+## Previews
 
 ### Home
 Description and Carousel
@@ -30,10 +30,10 @@ Grid Gallery
 Grid list with image
 
 ### Reservation
-Form
+![](docs/reservation.png)
 
 ### Access
-Address, phone number and Google map(?)
+![](docs/access.png)
 
 ### Contact
 Contact form
