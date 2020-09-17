@@ -12,7 +12,6 @@ main{
     padding:0 30px;
     margin:auto;
     max-width:1440px;
-    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     min-height: 640px;
@@ -22,6 +21,11 @@ main{
 form{
     min-width: 300px;
     align-self: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px #000;
 }
 
 form input {
