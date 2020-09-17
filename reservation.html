@@ -85,7 +85,7 @@
           <fieldset class="information my-4">
               <legend>Enter Your Information</legend>
 
-              <div class="row my-2 align-items-center justify-content-md-between">
+              <div class="row my-4 align-items-center justify-content-md-between">
                 <div class="col-12 col-md-4 col-lg-2">
                   <label for="name">Full Name</label>
                 </div>
@@ -99,7 +99,7 @@
                 </div>
               </div>
 
-              <div class="row my-2 align-items-center justify-content-md-between">
+              <div class="row my-4 align-items-center justify-content-md-between">
                 <div class="col-12 col-md-4 col-lg-2">
                   <label for="name">Email</label>
                 </div>
@@ -113,7 +113,7 @@
                 </div>
               </div>
 
-              <div class="row my-2 align-items-center justify-content-md-between">
+              <div class="row my-4 align-items-center justify-content-md-between">
                 <div class="col-12 col-md-4 col-lg-2">
                   <label for="name">Phone Number</label>
                 </div>
@@ -128,10 +128,10 @@
               </div>
           </fieldset>
 
-          <fieldset class="details my-4">
+          <fieldset class="details">
               <legend>Enter Details</legend>
 
-              <div class="row my-2 align-items-center justify-content-md-between">
+              <div class="row my-4 align-items-center justify-content-md-between">
                 <div class="col-12 col-md-4 col-lg-2">
                   <label for="num"># of people</label>
                 </div>
@@ -146,17 +146,31 @@
                 </div>
               </div>
 
-              <div class="row my-2 align-items-center justify-content-md-between">
+              <div class="row my-4 align-items-center justify-content-md-between">
                 <div class="col-12 col-md-4 col-lg-2">
-                  <label for="num">Date</label>
+                  <label for="date">Date</label>
                 </div>
                 <div class="col-12 col-md-8 col-lg-offset-2 col-lg-8">
                   <div class="input-group date">
-                    <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <input id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
                     <span class="input-group-addon">
                       <i class="glyphicon glyphicon-th"></i>
                     </span>
                   </div>
+                </div>
+              </div>
+
+              <div class="row my-4 align-items-center justify-content-md-between">
+                <div class="input-group col-12">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="location">Location</label>
+                  </div>
+                  <select class="custom-select" id="location">
+                    <option selected>Choose...</option>
+                    <option value="downtown">Downtown, Vancouver</option>
+                    <option value="burnaby">Kingsway, Burnaby</option>
+                    <option value="richmond">Thorpe Road, Richmond</option>
+                  </select>
                 </div>
               </div>
           </fieldset>
