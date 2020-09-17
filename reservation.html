@@ -80,41 +80,85 @@
     </header>
 
     <main>
-      <h2>Reservation</h2>        
+      <h2>Reservation</h2>
         <form>
-          <fieldset class="information">
+          <fieldset class="information my-4">
               <legend>Enter Your Information</legend>
-              <br>
-              <label for="name">Full Name</label>
-              <br>
-              <input type="text" id="name" 
-                placeholder="please enter your full name">
-              <br>
-              <label for="email">Email</label>
-              <br>
-              <input type="text" id="email" />
-              <br>
-              <label for="phoneNo">Phone Number</label>
-              <br>
-              <input type="text" id="phoneNo" />
-              <br>
-          </fieldset>
-          <fieldset class="details">
-              <legend>Enter Details</legend>
-              <br>
-              <label for="num"># of people</label>
-              <br>
-              <input type="text" id="num" />
-              <br>
-              <label for="date">Date</label>
-              <br>
-              <div class="input-group date" data-provide="datepicker">
-                  <input type="text" class="form-control">
-                  <div class="input-group-addon">
-                      <span class="glyphicon glyphicon-th"></span>
-                  </div>
+
+              <div class="row my-2 align-items-center justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input
+                    id="name" 
+                    class="form-control"
+                    type="text"
+                    placeholder="John Doe"
+                  />
+                </div>
               </div>
-              <br>
+
+              <div class="row my-2 align-items-center justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <label for="name">Email</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input
+                    id="email"
+                    class="form-control"
+                    type="email"
+                    placeholder="ABC@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-2 align-items-center justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <label for="name">Phone Number</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input
+                    id="phoneNo"
+                    class="form-control"
+                    type="tel"
+                    placeholder="000-000-0000"
+                  />
+                </div>
+              </div>
+          </fieldset>
+
+          <fieldset class="details my-4">
+              <legend>Enter Details</legend>
+
+              <div class="row my-2 align-items-center justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <label for="num"># of people</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input 
+                    id="num"
+                    class="form-control"
+                    type="number"
+                    min=1
+                    max=20
+                  />
+                </div>
+              </div>
+
+              <div class="row my-2 align-items-center justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <label for="num">Date</label>
+                </div>
+                <div class="col-12 col-md-8 col-lg-offset-2 col-lg-8">
+                  <div class="input-group date">
+                    <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-th"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
           </fieldset>
           <div class="form-button button-submit">
             <button type="submit">Submit</button>
@@ -127,8 +171,11 @@
         <p class="text-light">photo by <a href="www.unsplash.com">Unsplash</a></p>
     </footer>
 
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="scripts/datepicker.js" defer></script>
 </body>
 </html>
