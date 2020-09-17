@@ -10,6 +10,11 @@ main{
     background-color: white;
 }
 
+form{
+    width: 30%;
+    align-content: center;
+}
+
 .information input {
     padding:5px 20px;
     width:100%;
@@ -20,7 +25,7 @@ fieldset{
     margin:15px 0;
 }
 legend{
-    border-left:4px solid #b3aed4;
+    border-left:4px solid gray;
     font-size:20px;
     padding-left:8px;
     margin:0;
@@ -33,7 +38,7 @@ legend{
 button {
     font-size:18px;
     color:white;
-    background-color: #b3aed4;
+    background-color: black;
     border:none;
     padding:10px 15px;
     border-radius: 5px;
@@ -41,5 +46,5 @@ button {
 }
 button:focus{
     outline:none;
-    background-color:#b3aed4;
+    background-color:black;
 }
