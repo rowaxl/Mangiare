@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+main{
+    padding:0 30px;
+    flex:1;
+    margin:auto;
+    max-width:1440px;
+    background-color: white;
+}
+
+.first-content {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+}
+/*.first-content article{
+    text-align: justify;
+}*/
+.menu1-item{
+    
+    display: inline-block;
+}/*
+.menu2-item{
+    margin:0 auto 10px;
+}*/
+/*to make img in center of box*/
+.menu1-item img{
+    display:block;
+    margin:0 auto;
+}
+
+.menu2-item img{
+    display:block;
+    margin:0 auto;
+}
