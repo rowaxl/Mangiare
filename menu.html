@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <div class="container-fluid px-0 access">
+  <div class="container-fluid px-0 order">
     <header>
       <div class="row px-0">
         <div class="col-12">
@@ -29,7 +29,7 @@
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Menu</a>
+                  <a class="nav-link" href="menu.html">Order</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="reservation.html">Reservation</a>
@@ -80,40 +80,91 @@
       </div>
     </header>
 
-    <main>
-        <h1>Menu</h1>
-            <section class="first-content">
-                <article class="menu1">
-                    <div class="menu1-item menu1-item-01">
-                        <img src="images/beef.jpg" alt="Beef">
-                    </div>
-                </article>
-                <article class="menu1">
-                    <div class="menu1-item menu1-item-02">
-                        <img src="images/meal.jpg" alt="meal">
-                    </div>
-                </article>
-                <article class="menu1">
-                    <div class="menu1-item menu1-item-03">
-                        <img src="images/noodles.jpg" alt="noodles">
-                    </div>
-                </article>
-            </section>
+    <h1>Order</h1>
+    <main class="order-wrap">
+      <section class="menu-selection">
+            <article class="menu">
+                <div class="menu-item menu1-item-01">
+                    <img src="images/beef.jpg" alt="Beef">
+                </div>
+            </article>
+            <article class="menu">
+                <div class="menu-item menu1-item-02">
+                    <img src="images/meal.jpg" alt="meal">
+                </div>
+            </article>
+            <article class="menu">
+                <div class="menu-item menu1-item-03">
+                    <img src="images/noodles.jpg" alt="noodles">
+                </div>
+            </article>
 
-            <section>
-                <article class="menu2">
-                    <div class="menu2-item menu2-item-01">
-                        <img src="images/salami.jpg" alt="salami">
-                    </div>
-                    <div class="menu2-item menu2-item-02">
-                        <img src="images/spaghetti.jpg" alt="spaghetti">
-                    </div>
-                    <div class="menu2-item menu2-item-03">
-                        <img src="noodles.jpg" alt="noodles">
-                    </div>
-                </article>
-            </section>
-    </main>
+            <article class="menu">
+              <div class="menu-item menu2-item-01">
+                  <img src="images/salami.jpg" alt="salami">
+              </div>
+            </article>
+            <article class="menu">
+              <div class="menu-item menu2-item-02">
+                  <img src="images/spaghetti.jpg" alt="spaghetti">
+              </div>
+            </article>
+            <article class="menu">
+              <div class="menu-item menu2-item-03">
+                  <img src="images/noodles.jpg" alt="noodles">
+              </div>
+            </article>
+          </article>
+      </section>
+
+        <section class="orders">
+          <div class="row">
+            <table class="order-table table">
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+
+              <tr>
+                <td>Caprese salad(L)</td>
+                <td>1</td>
+                <td>$7.25</td>
+              </tr>
+              <tr>
+                <td>Puttanesca</td>
+                <td>2</td>
+                <td>$18.90</td>
+              </tr>
+              <tr>
+                <td>Lasagna</td>
+                <td>1</td>
+                <td>$8.30</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="row">
+            <table class="table-total-amount table">
+              <tr>
+                <th scope="col">Subtotal</th>
+                <td>$34.45</td>
+              </tr>
+
+              <tr>
+                <th scope="col">Taxs(GST + PST)</th>
+                <td>$4.13</td>
+              </tr>
+
+              <tr>
+                <th scope="col">Total</th>
+                <td>$38.58</td>
+              </tr>
+            </table>
+          </div>
+          <button class="checkout">Checkout</button>
+        </section>
+      </main>
 
         <footer class="px-4">
             <p class="text-light">&copy; 2020, for education purpose only</p>

@@ -8,7 +8,7 @@
     height: 100vh;
 }
 
-main{
+.reservation main {
     padding:0 30px;
     margin:auto;
     max-width:1440px;
