@@ -16,12 +16,13 @@ main{
     display:flex;
     flex-wrap: nowrap;
     flex-direction:row;
+    width: 100%;
+    gap: 3%;
 }
 /*.first-content article{
     text-align: justify;
 }*/
 .menu1-item{
-    
     display: inline-block;
 }/*
 .menu2-item{
@@ -31,6 +32,8 @@ main{
 .menu1-item img{
     display:block;
     margin:0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .menu2-item img{
