@@ -1,18 +1,12 @@
 .order-wrap {
     display:flex;
     flex-wrap: nowrap;
-    flex-direction:row;
+    flex-direction: column;
     width: 100%;
     gap: 3%;
+    justify-content: space-between;
+    height: 100vh;
 }
-/*.first-content article{
-    text-align: justify;
-}*/
-/*
-.menu2-item{
-    margin:0 auto 10px;
-}*/
-/*to make img in center of box*/
 
 article.menu {
     display: inline-block;
@@ -31,19 +25,21 @@ section.menu-selection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 300px;
 }
 
 section.orders {
     min-width: 350px;
     display: flex;
     flex-direction: column;
-    background-color: #ddd;
     padding: 0 15px;
+    position: relative;
 }
 
 section.orders .row {
     margin: 0;
     border-bottom: dashed 1px #000;
+    background-color: #ddd;
 }
 
 .order-table,
@@ -80,4 +76,21 @@ button.checkout {
     padding: 10px 25px;
     border: solid 1px orange;
     margin: 25px 0;
+    width: 100%;
+}
+
+#btn-collapse-orders {
+    background: rgba(0, 0, 0, 0.9);
+    border: solid 1px orange;
+    color: #fff;
+}
+
+#btn-collapse-orders.hide {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .order-wrap {
+        flex-direction: row;
+    }
 }
