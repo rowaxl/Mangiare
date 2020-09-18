@@ -52,17 +52,30 @@ nav{
   z-index: 999;
   color: white;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 50%;
 
 }
 
 .banner-title img{
-   width: 65%; 
+   width: 90%; 
 }
 
 .banner h4{
   margin-top: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner button{
+  margin-top: 30px;
+  background-color: black;
+  border: white 1px solid;
+  padding: 10px;
+  opacity: 60%;
+}
+
+.banner button a{
+  text-decoration: none;
+  color: orange;
 }
 
 .box{
