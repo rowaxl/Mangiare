@@ -6,9 +6,10 @@
     background-attachment: fixed;
     overflow: scroll;
     height: 100vh;
+    min-height: 1080px;
 }
 
-main{
+.reservation main {
     padding:0 30px;
     margin:auto;
     max-width:1440px;

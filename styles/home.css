@@ -33,9 +33,6 @@ nav{
   background-color: black;
 
 }
-.nav-item.active .nav-link {
-  color: orange !important;
-}
 
 .banner{
   position: relative;
@@ -56,7 +53,7 @@ nav{
 }
 
 .banner-title img{
-   width: 90%; 
+  width: 90%; 
 }
 
 .banner h4{
@@ -119,7 +116,6 @@ footer p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
   }
   
   .banner-title{
