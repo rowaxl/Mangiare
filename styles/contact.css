@@ -19,7 +19,7 @@ main{
     padding: 15px;
 }
 
-form{
+form.contact-form {
     min-width: 300px;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.8);
@@ -29,7 +29,7 @@ form{
     box-shadow: 0 0 1px 1px #000;
 }
 
-form input {
+form.contact-form input {
     border: 1px solid #000;
 }
 
@@ -54,7 +54,7 @@ legend{
     clear:both;  
 }
 
-button {
+form.contact-form button {
     font-size:18px;
     color:white;
     background-color: black;
@@ -64,19 +64,19 @@ button {
     float:right;
 }
 
-button:hover{
+form.contact-form button:hover{
     background-color:#333;
 }
 
-button:active{
+form.contact-form button:active{
     background-color:#555;
 }
 
-input {
+form.contact-form input {
     width: 100%;
     border-color: #ddd;
 }
-textarea{
+form.contact-form textarea{
     width: 100%;
     border: none;
 }

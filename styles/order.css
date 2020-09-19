@@ -147,15 +147,16 @@ button.btn-ingredient {
         height: 250px;
         max-width: 333px;
     }
-
-    .order {
-        height: 100vh;
-    }
 }
 
 
 @media(min-width: 1280px) {
     article.menu {
         width: 33%;
+    }
+
+    .order-wrap {
+        height: 80%;
+        min-height: 1200px;
     }
 }
