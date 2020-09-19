@@ -2,7 +2,9 @@
 
 ## Overview
 Restaurant page for CICCC project2
-Mangiare(*man’dʒare*): to eat
+**Mangiare(*man’dʒare*)**: to eat
+
+### [Github Pages](https://rowaxl.github.io/Mangiare/)
 
 ## Member
 - Dan Vergara
@@ -12,8 +14,7 @@ Mangiare(*man’dʒare*): to eat
 
 ## Pages
 - Home
-- Menu
-- My orders
+- Order
 - Reservation
 - Access
 - Contact
@@ -21,19 +22,16 @@ Mangiare(*man’dʒare*): to eat
 ## Details
 
 ### Home
-Description and Carousel
+![](docs/home.png)
 
-### Menu
-Grid Gallery
-
-### My Orders
-Grid list with image
+### Order
+![](docs/order.png)
 
 ### Reservation
-Form
+![](docs/reservation.png)
 
 ### Access
-Address, phone number and Google map(?)
+![](docs/access.png)
 
 ### Contact
-Contact form
+![](docs/contact.png)
