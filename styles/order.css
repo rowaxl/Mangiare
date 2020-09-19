@@ -14,7 +14,7 @@
     gap: 3%;
     justify-content: space-between;
     position: relative;
-    background: rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.74);
     padding: 15px 0;
 }
 
@@ -24,11 +24,21 @@ article.menu {
     padding: 10px 25px;
 }
 
-.menu-item img{
+.menu-item img {
     display:block;
     margin: 0 auto;
     width: 100%;
     height: auto;
+    min-height: 200px;
+    position: relative;
+}
+
+.menu-item img::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / (16/9));
 }
 
 section.menu-selection {
@@ -88,13 +98,13 @@ section.orders .row {
     width: 25%;
 }
 
-button.checkout {
+button.checkout,
+button.btn-ingredient {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     text-align: center;
     padding: 10px 25px;
-    border: solid 1px orange;
-    margin: 25px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
@@ -108,6 +118,21 @@ button.checkout {
     display: none;
 }
 
+.item-name, .item-price {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.item-name {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.item-price {
+    font-weight: 500;
+}
+
 @media(min-width: 991px) {
     .order-wrap {
         flex-direction: row;
@@ -117,11 +142,20 @@ button.checkout {
     article.menu {
         width: 50%;
     }
+
+    .menu-item img {
+        height: 250px;
+        max-width: 333px;
+    }
+
+    .order {
+        height: 100vh;
+    }
 }
 
 
 @media(min-width: 1280px) {
     article.menu {
-        width: 30%;
+        width: 33%;
     }
 }
