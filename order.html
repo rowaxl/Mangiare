@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="styles/order.css">
   <title>Mangiare</title>
 </head>
 <body>
@@ -22,23 +22,23 @@
             <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="order.html">Order</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="order.html">Order <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="reservation.html">Reservation</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Access <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="access.html">Access</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                   <button id="btn-login" class="nav-link" data-toggle="modal" data-target="#login-modal">Login</button>
@@ -80,59 +80,59 @@
       </div>
     </header>
 
-    <h1>Order</h1>
+    <h1 class="ml-4 text-light">Order</h1>
     <main class="order-wrap">
       <section class="menu-selection">
         <article class="menu">
-          <div class="menu-item menu1-item-01">
+          <div class="menu-item">
               <img src="images/beef.jpg" alt="Beef">
               <p>Ingredients: classic meat ragu, parmigiano reggiano</p>
           </div>
         </article>
         <article class="menu">
-            <div class="menu-item menu1-item-02">
+            <div class="menu-item ">
                 <img src="images/meal.jpg" alt="meal">
                 <p>Ingredients: tomato, braised turnip greens, garlic scape, anchovy </p>
             </div>
         </article>
         <article class="menu">
-            <div class="menu1-item menu1-item-03">
+            <div class="menu-item">
                 <img src="images/noodles.jpg" alt="noodles">
                 <p>Ingredients: tomato sauce, cherry tomatoes, calabrian chili, pecorino romano, arugula</p>
             </div>
         </article>
         <article class="menu">
-          <div class="menu2-item menu2-item-01">
+          <div class="menu-item">
               <img src="images/salami.jpg" alt="salami">
               <p>Ingredients: one year aged acquerello rice, saffron, butter, parmigiano reggiano</p>
           </div>
         </article>
         <article class="menu">    
-          <div class="menu2-item menu2-item-02">
+          <div class="menu-item">
               <img src="images/spaghetti.jpg" alt="spaghetti">
               <p>Ingredients: roasted eggplant, San Marzano tomato, basil, mozzarella, parmigiano reggiano, bread crumb</p>
           </div>
         </article>
         <article class="menu">
-          <div class="menu2-item menu2-item-03">
+          <div class="menu-item">
               <img src="images/bruschetta.jpg" alt="bruschetta">
               <p>Ingredients: pan roasted BC halibut, braised turnip greens, tomato broth, fava beans, braised cannellini, fennel</p>
           </div>
         </article>
         <article class="menu">
-          <div class="menu3-item menu3-item-01">
+          <div class="menu-item">
               <img src="images/creamy-pasta.jpg" alt="creamy-pasta">
               <p>Ingredients: grilled hanger steak, seasonal green salad, olive oil, balsamic, parmigiano reggiano</p>
           </div>
         </article>
         <article class="menu">    
-          <div class="menu3-item menu3-item-02">
+          <div class="menu-item">
               <img src="images/spaghetti-shrimps.jpg" alt="spaghetti-shrimps">
               <p>Ingredients: organic greens, farm fresh spring vegetables, organic honey and thyme vinaigrette, parmigiano reggiano</p>
           </div>
         </article>
         <article class="menu">
-          <div class="menu3-item menu3-item-03">
+          <div class="menu-item">
             <img src="images/pizza2.jpg" alt="pizza2">
             <p>Ingredients: rosemary aioli, crispy caper, grilled garlic scape, semi dry tomatoes, pickled cippolini, crostin</p>
           </div>
@@ -193,11 +193,12 @@
         </section>
       </main>
 
-        <footer class="px-4">
-            <p class="text-light">&copy; 2020, for education purpose only</p>
-            <p class="text-light">photo by <a href="www.unsplash.com">Unsplash</a></p>
-        </footer>
-    </div>
+    <footer class="text-light">
+      <p>&copy; 2020, Mangiare italian restaurant</p>
+      <p>For education purpose only</p>
+      <p>Photo by <a href="https://pixabay.com/">pixabay</a>, <a href="www.unsplash.com">Unsplash</a></p>
+    </footer>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -205,41 +206,3 @@
   <script src="scripts/orderCollapse.js"></script>
 </body>
 </html>
-    <main>
-        <h1>Menu</h1>
-            <section class="first-content">
-                
-            </section>
-
-            <section class="first-content">
-                
-            </section>
-
-            <section class="first-content">
-                <article class="menu3">
-                    <div class="menu3-item menu3-item-01">
-                        <img src="images/creamy-pasta.jpg" alt="creamy-pasta">
-                        <p>Ingredients: grilled hanger steak, seasonal green salad, olive oil, balsamic, parmigiano reggiano</p>
-                    </div>
-                </article>
-                <article class="menu3">    
-                    <div class="menu3-item menu3-item-02">
-                        <img src="images/spaghetti-shrimps.jpg" alt="spaghetti-shrimps">
-                        <p>Ingredients: organic greens, farm fresh spring vegetables, organic honey and thyme vinaigrette, parmigiano reggiano</p>
-                    </div>
-                </article>
-                <article class="menu3">
-                    <div class="menu3-item menu3-item-03">
-                        <img src="images/pizza2.jpg" alt="pizza2">
-                        <p>Ingredients: rosemary aioli, crispy caper, grilled garlic scape, semi dry tomatoes, pickled cippolini, crostin</p>
-                    </div>
-                </article>
-            </section>
-    </main>
-
-    <footer class="text-light col-12">
-        <p>&copy; 2020, Mangiare italian restaurant</p>
-        <p>For education purpose only</p>
-        <p>Photo by <a href="https://pixabay.com/">pixabay</a>, <a href="www.unsplash.com">Unsplash</a></p>
-    </footer>
-    </div>

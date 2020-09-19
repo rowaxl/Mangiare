@@ -1,6 +1,6 @@
 const collapseButton = document.querySelector('#btn-collapse-orders');
 const collapseWrap = document.querySelector('#orderWrap')
-const BREAK_POINT = 768;
+const BREAK_POINT = 991;
 
 function toggleCollapseView() {
   if (window.innerWidth > BREAK_POINT) {
