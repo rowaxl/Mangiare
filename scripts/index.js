@@ -102,6 +102,7 @@ $(function () {
   }
 
   function addToCart(event) {
+    // get item's id from clicked button
     const target = event.target;
     const id = target.dataset['menuId'];
     const item = items[id];
@@ -111,9 +112,10 @@ $(function () {
     const cartItemIndex = cart.findIndex((cartItem) => cartItem.name === item.name);
 
     if (cartItemIndex > -1) {
-      // increase quantity
+      // if item exsists, increase quantity
       cart[cartItemIndex].quantity += 1;
     } else {
+      // if item not exsists, add new item inside of cart
       cart.push({
         name: item.name,
         price: item.price,
@@ -131,6 +133,7 @@ $(function () {
   function renderCartItems() {
     if (cart.length < 1) return;
 
+    // remove all elements inside of orders table
     orders.empty();
 
     // same with .innerHTML = 
