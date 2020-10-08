@@ -160,3 +160,12 @@ button.btn-ingredient {
         min-height: 1200px;
     }
 }
+
+.menu-item {
+    position: relative;
+}
+
+.btn-add-cart {
+    position: relative;
+    width: 100%;
+}

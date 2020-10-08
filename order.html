@@ -91,6 +91,9 @@
               <img src="images/salami.jpg" alt="salami">
               <p class="item-name">Salami salad</p>
                 <p class="item-price">$12.50</p>
+                <button class="btn-add-cart btn btn-primary" data-menu-id="1">
+                  Add to cart
+                </button>
                 <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-4-ingredient" aria-expanded="false" aria-controls="item-4-ingredient">
                   Ingredients
                 </button>
@@ -107,6 +110,9 @@
               <img src="images/bruschetta.jpg" alt="bruschetta">
               <p class="item-name">balsamic bruschetta</p>
               <p class="item-price">$9.75</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="2">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-6-ingredient" aria-expanded="false" aria-controls="item-6-ingredient">
                 Ingredients
               </button>
@@ -125,6 +131,9 @@
                 <img src="images/meal.jpg" alt="meal">
                 <p class="item-name">Lasagna Puttanesca</p>
                 <p class="item-price">$12.50</p>
+                <button class="btn-add-cart btn btn-primary" data-menu-id="3">
+                  Add to cart
+                </button>
                 <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-2-ingredient" aria-expanded="false" aria-controls="item-1-ingredient">
                   Ingredients
                 </button>
@@ -143,6 +152,9 @@
               <img src="images/beef.jpg" alt="Beef">
               <p class="item-name">Meat sauce pasta</p>
               <p class="item-price">$11.40</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="4">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-1-ingredient" aria-expanded="false" aria-controls="item-1-ingredient">
                 Ingredients
               </button>
@@ -159,6 +171,9 @@
                 <img src="images/noodles.jpg" alt="noodles">
                 <p class="item-name">Cherry tomato pasta</p>
                 <p class="item-price">$10.25</p>
+                <button class="btn-add-cart btn btn-primary" data-menu-id="5">
+                  Add to cart
+                </button>
                 <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-3-ingredient" aria-expanded="false" aria-controls="item-3-ingredient">
                   Ingredients
                 </button>
@@ -177,6 +192,9 @@
               <img src="images/spaghetti.jpg" alt="spaghetti">
               <p class="item-name">Garlic shrmip pasta</p>
               <p class="item-price">$17.25</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="6">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-5-ingredient" aria-expanded="false" aria-controls="item-5-ingredient">
                 Ingredients
               </button>
@@ -196,6 +214,9 @@
               <img src="images/creamy-pasta.jpg" alt="creamy-pasta">
               <p class="item-name">cream sauce pasta</p>
               <p class="item-price">$16.20</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="7">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-7-ingredient" aria-expanded="false" aria-controls="item-7-ingredient">
                 Ingredients
               </button>
@@ -213,6 +234,9 @@
               <img src="images/pizza1.jpg" alt="spaghetti-shrimps">
               <p class="item-name">margherita pizza</p>
               <p class="item-price">$20.15</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="8">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-8-ingredient" aria-expanded="false" aria-controls="item-8-ingredient">
                 Ingredients
               </button>
@@ -230,6 +254,9 @@
             <img src="images/pizza2.jpg" alt="pizza2">
             <p class="item-name">eggplant salad pizza</p>
               <p class="item-price">$18.15</p>
+              <button class="btn-add-cart btn btn-primary" data-menu-id="9">
+                Add to cart
+              </button>
               <button class="btn-ingredient btn" type="button" data-toggle="collapse" data-target="#item-9-ingredient" aria-expanded="false" aria-controls="item-9-ingredient">
                 Ingredients
               </button>
@@ -246,32 +273,11 @@
 
       <section class="orders">
         <button id="btn-collapse-orders" class="btn" type="button" data-toggle="collapse" data-target="#orderWrap" aria-expanded="false" aria-controls="orderWrap">
-          Cart(4)
+          Cart(<span id="order-cart">0</span>)
         </button>
         <div id="orderWrap" class="collapse">
           <div class="row">
             <table class="order-table table">
-              <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Subtotal</th>
-              </tr>
-
-              <tr>
-                <td>SALAMI SALAD</td>
-                <td>1</td>
-                <td>$12.50</td>
-              </tr>
-              <tr>
-                <td>CHERRY TOMATO PASTA</td>
-                <td>2</td>
-                <td>$20.50</td>
-              </tr>
-              <tr>
-                <td>MARGHERITA PIZZA</td>
-                <td>1</td>
-                <td>$20.15</td>
-              </tr>
             </table>
           </div>
 
@@ -279,17 +285,17 @@
             <table class="table-total-amount table">
               <tr>
                 <th scope="col">Subtotal</th>
-                <td>$53.15</td>
+                <td><span id="order-subtotal"></span></td>
               </tr>
 
               <tr>
                 <th scope="col">Taxs(GST + PST)</th>
-                <td>$6.31</td>
+                <td><span id="order-tax"></span></td>
               </tr>
 
               <tr>
                 <th scope="col">Total</th>
-                <td>$59.46</td>
+                <td><span id="order-total"></span></td>
               </tr>
             </table>
           </div>
