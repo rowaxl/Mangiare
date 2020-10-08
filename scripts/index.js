@@ -103,16 +103,12 @@ $(function () {
 
   function addToCart(event) {
     const target = event.target;
-
     const id = target.dataset['menuId'];
-
     const item = items[id];
 
     // if we have same item in cart, just increase quantity
     // if not, add new item in the cart
     const cartItemIndex = cart.findIndex((cartItem) => cartItem.name === item.name);
-
-    console.log('index: ', cartItemIndex);
 
     if (cartItemIndex > -1) {
       // increase quantity
@@ -124,8 +120,6 @@ $(function () {
         quantity: 1
       });
     }
-
-    console.log(cart);
 
     // render items in cart
     renderCartItems();
